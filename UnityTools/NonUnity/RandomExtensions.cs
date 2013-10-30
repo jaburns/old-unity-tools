@@ -1,6 +1,6 @@
 using System;
 
-namespace HMG
+namespace UnityTools
 {
     public static class RandomExtensions
     {

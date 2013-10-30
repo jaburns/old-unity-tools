@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace HMG
+namespace UnityTools
 {
     static public class HMath
     {

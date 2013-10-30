@@ -1,7 +1,7 @@
 ﻿
 using System;
 
-namespace HMG
+namespace UnityTools
 {
     public struct Circle
     {

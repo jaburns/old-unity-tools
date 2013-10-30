@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace HMG.BadJson
+namespace UnityTools
 {
     static public class BadJson
     {
