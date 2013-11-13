@@ -65,6 +65,7 @@
     <Compile Include="Follow.cs" />
     <Compile Include="GameObjectExtensions.cs" />
     <Compile Include="Gravitate.cs" />
+    <Compile Include="MiscExtensions.cs" />
     <Compile Include="NonUnity\BadJson.cs" />
     <Compile Include="NonUnity\EventExtensions.cs" />
     <Compile Include="NonUnity\HFormat.cs" />
