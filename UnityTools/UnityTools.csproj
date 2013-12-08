@@ -68,6 +68,7 @@
     <Compile Include="MiscExtensions.cs" />
     <Compile Include="NonUnity\BadJson.cs" />
     <Compile Include="NonUnity\EventExtensions.cs" />
+    <Compile Include="NonUnity\Geom.cs" />
     <Compile Include="NonUnity\HFormat.cs" />
     <Compile Include="NonUnity\Circle.cs" />
     <Compile Include="NonUnity\IEnumerableExtensions.cs" />

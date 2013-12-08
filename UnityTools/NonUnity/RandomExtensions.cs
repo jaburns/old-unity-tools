@@ -6,7 +6,6 @@ namespace UnityTools
     {
         public static void Shuffle (this Random rng, Array array)
         {
-            
             int n = array.Length;
             while (n > 1) {
                 int k = rng.Next (n--);

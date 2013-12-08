@@ -6,9 +6,11 @@ namespace UnityTools
 {
     public static class MiscExtensions
     {
-        static bool Intersect (this Rect rectA, Rect rectB) {
-            return Mathf.Abs(rectA.x - rectB.x) < Mathf.Abs(rectA.width  + rectB.width)  / 2
-                && Mathf.Abs(rectA.y - rectB.y) < Mathf.Abs(rectA.height + rectB.height) / 2;
+        public static bool Intersects (this Rect a, Rect b) {
+            return a.x < b.xMax
+                && a.xMax > b.x
+                && a.y < b.yMax
+                && a.yMax > b.y;
         }
     }
 }
