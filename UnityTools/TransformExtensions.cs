@@ -26,6 +26,19 @@ namespace UnityTools
         }
 
         /// <summary>
+        /// Call Object.Destroy on all the children of the transform.
+        /// </summary>
+        static public void DestroyAllChildren (this Transform transform, bool immediate = false)
+        {
+            var deadKids = new HashSet <GameObject> ();
+            foreach (Transform t in transform) deadKids.Add (t.gameObject);
+            foreach (var deadKid in deadKids) {
+                if (immediate) UnityEngine.Object.DestroyImmediate (deadKid);
+                else           UnityEngine.Object.Destroy          (deadKid);
+            }
+        }
+
+        /// <summary>
         /// Resets the local position, rotation, and scale of a transform to identity.
         /// </summary>
         static public void Reset (this Transform transform)
